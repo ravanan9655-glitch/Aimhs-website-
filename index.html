@@ -715,81 +715,50 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Get in touch for admission details and counseling</p>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Get in touch for admission details and counseling</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- ... (keep your existing contact info) ... -->
             </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Our Information</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Near Bus Stand, Needamangalam, Thiruvarur, Tamil Nadu - 609001</p>
-                        </div>
+            <div class="contact-form">
+                <form id="enquiryForm" method="POST" action="submit_form.php">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 96550 87025</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>ravanan9655@gmail.com</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Timings</h4>
-                            <p>Monday-Saturday: 8AM - 8PM<br>Sunday: 10AM - 2PM</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="course">Course Interested In</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="NEET Foundation">NEET Foundation (Class 11-12)</option>
+                            <option value="NEET Crash Course">NEET Crash Course</option>
+                            <option value="Weekend Program">Weekend Program</option>
+                            <option value="Doubt Clearing">Doubt Clearing Sessions</option>
+                        </select>
                     </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Course Interested In</label>
-                            <select id="course">
-                                <option>NEET Foundation (Class 11-12)</option>
-                                <option>NEET Crash Course</option>
-                                <option>Weekend Program</option>
-                                <option>Doubt Clearing Sessions</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Enquiry</button>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Enquiry</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
